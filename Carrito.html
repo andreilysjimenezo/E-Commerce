@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<section>
+
+    <body>
+        <header>
+            <nav>
+                <img src="img/Logo.png" width="200px" class="Logo">
+                <div class="menu"> 
+                <a href="index.html">Inicio</a>
+                <a href="Perros.html">Perros</a>
+                <a href="Hamburguesas.html">Hamburguesas</a>
+                <a href="Franceses.html">Franceses</a>
+                <a href="Contactanos.html">Contactanos</a>
+                <a href="Carrito.html">Carrito</a>
+                </div>
+            </nav>
+
+        </header>
+
+
+        
+            <main>
+            
+                <h1 class="titulo-carrito"> Carrito de compras </h1>
+
+                <div id="carrito"></div>
+
+                <h2 id="total"></h2>
+                
+                <div class="botones-carrito">
+                <button onclick="Vaciar()">Vaciar carrito</button>
+                </div>
+
+               
+
+             </main>
+
+        
+
+
+
+
+
+
+
+
+        <footer>
+
+            <p>Univerdidad Libre</p>
+            <p>Facultad de Ingeniería</p>
+            <p>2026 Andreilys Jimenez. Todos los derechos reservados. &copy;</p>
+
+        </footer>
+
+        <script src="js/carrito.js"></script>
+
+        <script>
+
+       let nombres = [
+       "Perro Tradicional",
+       "Perro Finas Hierbas",
+       "Perro Black",
+       "Perro 2.0",
+       "Hamburguesa Tradicional",
+       "Hamburguesa Finas Hierbas",
+       "Hamburguesa Black",
+       "Hamburguesa Brioche Mix",
+       "Hamburguesa Artesanal",
+       "Hamburguesa Brioche Kumis",
+       "Francés Blanco",
+       "Francés Finas Hierbas",
+       "Francés Artellano",
+       "Pan Tajado"
+                ];
+
+       let precios = [
+       14000, 14000, 7500, 6300,
+       8400, 8400, 4500, 4800,
+       4200, 6000, 5400, 5600,
+       7800, 8000
+               ];
+
+       let cantidadesGuardadas = JSON.parse(localStorage.getItem("cantidades"));
+
+       let texto = "";
+       let total = 0;
+
+       for (let i = 0; i < nombres.length; i++) {
+        if (cantidadesGuardadas[i] > 0) {
+        let subtotal = cantidadesGuardadas[i] * precios[i];
+       texto = texto + "<p>" + nombres[i] + ": " +
+      cantidadesGuardadas[i] + " unidades ➡️ $" + subtotal +
+        "  <button onclick='Quitar(" + i + ")'>-</button>" + " <button onclick='Agregar(" + i + ")'>+</button></p>";
+
+        total = total + subtotal;
+         }
+       }
+
+       document.getElementById("carrito").innerHTML = texto;
+       document.getElementById("total").innerHTML = "TOTAL: $" + total;
+
+
+
+
+
+
+       </script>
+
+
+
+
+     
+    </body>
+</section>
+
+</html>

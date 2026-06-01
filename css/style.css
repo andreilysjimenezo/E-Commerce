@@ -1,0 +1,281 @@
+nav{
+ 
+background-color: #d90404;
+padding: 10px;
+display: flex;
+align-items: center;
+margin-right: 50px;
+margin-left: 80px;
+border-radius: 50px;
+
+}
+
+nav a {
+
+color: white;
+text-decoration: none;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin-right: 40px;
+text-align: center;
+
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    color:black;
+}
+
+.menu {
+
+position: absolute;
+left: 35%;
+
+
+}
+
+.Logo{
+
+margin-left: 15%;
+
+
+
+}
+
+
+
+.hecho {
+
+display: flex;
+align-items: center;
+margin-top:-400px;
+margin-left:850px;
+gap: 55px;
+
+
+
+
+
+}
+
+.Hamb {
+
+border-radius: 70px;
+
+
+}
+
+.texto {
+
+ margin: 0;
+ margin-bottom: 15px;    
+
+
+}
+
+
+
+footer {
+
+    background-color: #d90404;
+    color: white;
+    text-align: center;
+    line-height: 5px;
+    padding: 5px;
+}
+.title1 {
+
+  text-align: left;
+
+}
+h1{
+
+font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+text-align: center;
+
+}
+
+p, ul {
+
+font-family: 'Poppins', sans-serif;
+line-height: 1.6;
+
+}
+
+section {
+
+background-image: url(Fondo1.png);
+background-size: cover;
+
+}
+
+.main1 {
+
+    margin: 7.5%;
+  
+}
+
+table{
+
+display: flex;
+justify-content: center;
+border-spacing: 10px 8px;
+}
+
+.Contactanos {
+
+text-align: center;
+
+}
+
+.datos{
+    width: 270px;
+    height: 50px;
+
+    border: none;
+    border-radius: 15px;
+    
+
+    background-color: #f2f2f2;
+
+    padding-left: 20px;
+    font-size: 18px;
+
+}
+
+.Enviar {
+
+   width: 220px;
+    height: 70px;
+
+    border: none;
+    border-radius: 15px;
+
+    background-color: #e10d0d;
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+input[type="email"]{
+    width: 550px;
+}
+
+.titulo-carrito {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.botones-carrito {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#carrito {
+
+ text-align: center;
+ width: 45%;
+ margin: 30px auto;
+ background-color: rgba(255, 255, 255, 0.88);
+ border-radius: 25px;
+ box-shadow: 0 0 15px rgba(0,0,0,0.2);
+ 
+ 
+
+
+}
+
+#total {
+
+text-align: center;
+font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+
+
+}
+
+#carrito p {
+    
+   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 0;
+    font-size: 17px;
+    color: #8b0000;
+}
+
+
+
+
+
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  margin-left: 15%;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+button {
+  background-color: #d90404;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.row{
+    width: 90%;
+    margin-left: 10%;
+}
+
+.card:hover {
+
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+
+
+
